@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1>🛡 Prediction Completed</h1>
+
+    <p class="subtitle">
+
+        AI Analysis of Uploaded Network Dataset
+
+    </p>
+
+    <div class="stats-grid">
+
+        <div class="result-card">
+
+            <h2>{{ total_records }}</h2>
+
+            <p>Total Records</p>
+
+        </div>
+
+        <div class="result-card success">
+
+            <h2>{{ normal }}</h2>
+
+            <p>Normal Traffic</p>
+
+        </div>
+
+        <div class="result-card danger">
+
+            <h2>{{ attack }}</h2>
+
+            <p>Attack Traffic</p>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2>99.91%</h2>
+
+            <p>Model Accuracy</p>
+
+        </div>
+
+    </div>
+
+    <div class="summary-box">
+
+        <h2>Prediction Summary</h2>
+
+        <br>
+
+        <p>
+
+            ✔ Dataset processed successfully.
+
+        </p>
+
+        <p>
+
+            ✔ Random Forest classified every
+            network connection.
+
+        </p>
+
+        <p>
+
+            ✔ Download the prediction file below.
+
+        </p>
+
+    </div>
+    <br>
+    <div class="summary-box">
+
+    <h2>📋 Prediction Preview</h2>
+
+    <table class="preview-table">
+
+        <thead>
+
+            <tr>
+
+                <th>#</th>
+
+                <th>Prediction</th>
+
+                <th>Confidence (%)</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        {% for row in preview %}
+
+        <tr>
+
+            <td>{{ loop.index }}</td>
+
+            <td>{{ row["Prediction"] }}</td>
+
+            <td>{{ row["Confidence (%)"] }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+    <br>
+
+    <a href="/download" class="download-btn">
+
+        📥 Download Prediction CSV
+
+    </a>
+
+    <div class="buttons" style="margin-top:40px;">
+
+        <a href="/upload" class="btn">
+
+            📂 Predict Another Dataset
+
+        </a>
+
+        <a href="/" class="btn secondary">
+
+            🏠 Home
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</html>

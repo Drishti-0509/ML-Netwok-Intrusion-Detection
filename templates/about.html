@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Project</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="about-container">
+
+    <h1>🛡 About Network Intrusion Detection System</h1>
+
+    <p class="subtitle">
+        AI-Based Cybersecurity using Machine Learning
+    </p>
+
+    <div class="about-card">
+
+        <h2>📌 Project Overview</h2>
+
+        <p>
+            This project detects malicious network traffic using a
+            <strong>Random Forest Classifier</strong>.
+            It analyzes network connection records and predicts
+            whether each connection is <strong>Normal</strong> or an
+            <strong>Attack</strong>.
+        </p>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>📂 Dataset</h2>
+
+        <ul>
+            <li>NSL-KDD Dataset</li>
+            <li>41 Network Features</li>
+            <li>Binary Classification</li>
+        </ul>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>🤖 Machine Learning Model</h2>
+
+        <ul>
+            <li>Random Forest Classifier</li>
+            <li>StandardScaler</li>
+            <li>Label Encoding</li>
+        </ul>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>📊 Model Performance</h2>
+
+        <table class="metric-table">
+
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+            </tr>
+
+            <tr>
+                <td>Accuracy</td>
+                <td>99.91%</td>
+            </tr>
+
+            <tr>
+                <td>Precision</td>
+                <td>99.90%</td>
+            </tr>
+
+            <tr>
+                <td>Recall</td>
+                <td>99.89%</td>
+            </tr>
+
+            <tr>
+                <td>F1 Score</td>
+                <td>99.89%</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>⚙ Technology Stack</h2>
+
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-Learn</li>
+            <li>Joblib</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+
+    </div>
+
+
+    <br>
+    <div class="about-card">
+
+    <h2>📊 Model Evaluation</h2>
+
+    <div class="image-grid">
+
+        <div class="image-card">
+
+            <h3>Confusion Matrix</h3>
+
+            <img src="{{ url_for('static', filename='images/confusion_matrix.png') }}"
+                 alt="Confusion Matrix">
+
+        </div>
+
+        <div class="image-card">
+
+            <h3>ROC Curve</h3>
+
+            <img src="{{ url_for('static', filename='images/roc_curve.png') }}"
+                 alt="ROC Curve">
+
+        </div>
+
+        <div class="image-card">
+
+            <h3>Feature Importance</h3>
+
+            <img src="{{ url_for('static', filename='images/feature_importance.png') }}"
+                 alt="Feature Importance">
+
+        </div>
+
+        <div class="image-card">
+
+            <h3>Model Comparison</h3>
+
+            <img src="{{ url_for('static', filename='images/model_comparison.png') }}"
+                 alt="Model Comparison">
+
+        </div>
+
+    </div>
+
+</div>
+    
+
+    <a href="/" class="nav-btn">
+        🏠 Back to Home
+    </a>
+
+</div>
+
+
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</html>

@@ -1,0 +1,737 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#081120;
+    color:#ffffff;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+    text-decoration:none;
+}
+
+/* ===========================
+   HOME PAGE
+=========================== */
+
+.hero{
+
+    min-height:60vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.content{
+
+    max-width:900px;
+
+}
+
+.content h1{
+
+    font-size:55px;
+
+    color:#4da6ff;
+
+    margin-bottom:20px;
+
+}
+
+.content p{
+
+    font-size:22px;
+
+    color:#dddddd;
+
+    margin-bottom:35px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.secondary{
+
+    background:#0f172a;
+
+    border:2px solid #2563eb;
+
+}
+
+/* ===========================
+   STATISTICS
+=========================== */
+
+.stats{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#102a54;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.card h2{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#d1d5db;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:50px auto;
+
+    background:#102a54;
+
+    padding:35px;
+
+    border-radius:18px;
+
+}
+
+.about h2{
+
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    margin-bottom:15px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#bdbdbd;
+
+}
+
+/* ===========================
+   UPLOAD PAGE
+=========================== */
+
+.upload-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:30px;
+
+}
+
+.upload-card{
+
+    width:700px;
+
+    background:white;
+
+    color:#222;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+
+}
+
+.upload-card h1{
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.upload-card p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.drop-area{
+
+    border:3px dashed #2563eb;
+
+    border-radius:15px;
+
+    padding:50px;
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.drop-area:hover{
+
+    background:#eef4ff;
+
+}
+
+.drop-area input{
+
+    margin-top:20px;
+
+}
+
+.upload-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.upload-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ===========================
+   RESULT PAGE
+=========================== */
+
+.result-container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    text-align:center;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.result-card{
+
+    background:white;
+
+    color:#222;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.result-card h2{
+
+    font-size:40px;
+
+    color:#2563eb;
+
+}
+
+.success{
+
+    border-top:6px solid #22c55e;
+
+}
+
+.danger{
+
+    border-top:6px solid #ef4444;
+
+}
+
+.download-btn{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    padding:18px 35px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.download-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.nav-btn{
+
+    display:inline-block;
+
+    margin:20px 10px;
+
+    padding:15px 30px;
+
+    background:#0f172a;
+
+    color:white;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+    background:#2563eb;
+
+}
+
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.about-container{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+}
+
+.about-card{
+
+    background:white;
+
+    color:#222;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    margin:25px 0;
+
+}
+
+.about-card h2{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.about-card ul{
+
+    padding-left:20px;
+
+}
+
+.about-card li{
+
+    margin:10px 0;
+
+}
+
+.metric-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+.metric-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.metric-table th,
+.metric-table td{
+
+    border:1px solid #ddd;
+
+    padding:12px;
+
+    text-align:center;
+
+}
+
+/* ===========================
+   ERROR BOX
+=========================== */
+
+.error-box{
+
+    background:#ffd6d6;
+
+    color:#d00000;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .content h1{
+
+        font-size:36px;
+
+    }
+
+    .content p{
+
+        font-size:18px;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+    /* Upload Icon */
+
+.upload-icon{
+
+    font-size:70px;
+
+    margin-bottom:15px;
+
+}
+
+/* File Input */
+
+input[type=file]{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:2px dashed #2563eb;
+
+    background:#f8fbff;
+
+    cursor:pointer;
+
+}
+
+/* Upload Card Title */
+
+.upload-card h2{
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+
+}
+
+.upload-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+/* ===========================
+   SUMMARY BOX
+=========================== */
+
+.summary-box{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    background:#102a54;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+
+}
+
+.summary-box h2{
+
+    color:#4da6ff;
+
+}
+
+.summary-box p{
+
+    margin:15px 0;
+
+    font-size:18px;
+
+    color:white;
+
+}
+.image-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.image-card{
+
+    background:#f8fafc;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+}
+
+.image-card h3{
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.image-card img{
+
+    width:100%;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    transition:.3s;
+
+}
+
+.image-card img:hover{
+
+    transform:scale(1.02);
+
+}
+/* ===========================
+   Preview Table
+=========================== */
+
+.preview-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:25px;
+
+    background:white;
+
+    color:black;
+
+}
+
+.preview-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+.preview-table td{
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+.preview-table tr:nth-child(even){
+
+    background:#f5f5f5;
+
+}
+
+}

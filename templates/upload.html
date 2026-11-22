@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Dataset</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="upload-container">
+
+    <div class="upload-card">
+
+        <h1>📂 Upload Network Dataset</h1>
+
+        <p>
+
+            Upload a CSV or TXT dataset containing
+            network traffic records.
+
+        </p>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+
+                <div class="error-box">
+
+                    {{ messages[0] }}
+
+                </div>
+
+            {% endif %}
+        {% endwith %}
+
+        <form action="/predict"
+              method="POST"
+              enctype="multipart/form-data">
+
+            <div class="drop-area">
+
+                <div class="upload-icon">
+
+                    ☁️
+
+                </div>
+
+                <h2>Choose Dataset</h2>
+
+                <p>
+
+                    Supported Formats
+
+                </p>
+
+                <h3>
+
+                    CSV • TXT
+
+                </h3>
+
+                <br>
+
+                <input
+                    type="file"
+                    name="dataset"
+                    accept=".csv,.txt"
+                    required>
+
+            </div>
+
+            <button
+                type="submit"
+                class="upload-btn">
+
+                🚀 Upload & Predict
+
+            </button>
+
+        </form>
+
+        <br>
+
+        <div class="buttons">
+
+            <a href="/" class="btn">
+
+                🏠 Home
+
+            </a>
+
+            <a href="/about" class="btn secondary">
+
+                📘 About
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</html>
